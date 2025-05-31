@@ -19,8 +19,29 @@ var questionsArr = [
     {
         question: 'Some cats are ambidextous, but 40 percent are either left- or right-pawed',
         answer: true  
+    },
+    {
+        question: 'Cats have whiskers on the backs of their front legs, as well',
+        answer: true
     }
 ]
-function runQuiz {
-    
+
+function runQuiz() {
+    let score = 0;
+
+    for (var i=0; i < questionsArr.length; i++) {
+        let input = confirm(questionsArr[i].question);
+
+        if (input === questionsArr[i].answer) {
+            alert('Correct!');
+            score++;
+        } else {
+            alert('Incorrect!');
+        }
+    }
+
+    let percent = (score / questionsArr.length) * 100;
+    let roundedPercent = Math.round(percent);
+
+    alert('Your final score: ' + roundedPercent + '%');
 }
