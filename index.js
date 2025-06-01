@@ -17,7 +17,7 @@ var questionsArr = [
         answer: false
     },
     {
-        question: 'Some cats are ambidextous, but 40 percent are either left- or right-pawed',
+        question: 'Some cats are ambidextrous, but 40 percent are either left- or right-pawed',
         answer: true  
     },
     {
